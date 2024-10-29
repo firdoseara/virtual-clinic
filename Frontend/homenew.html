@@ -63,17 +63,17 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="Assets/logofinal.webp" alt="Logo" class="logo-image">
+            <img src="logofinal.webp" alt="Logo" class="logo-image">
             <span class="logo-name">V-Cure</span>
         </div>
         <nav class="nav-icons">
-            <div class="icon-circle">Virtual Clinic</div>
-            <div class="icon-circle">SOS Video Consultation</div>
-            <div class="icon-circle">Order Medication</div>
-            <div class="icon-circle">Hospital Discount</div>
-            <div class="icon-circle">Ambulance Booking</div>
-            <div class="icon-circle">About</div>
-            <div class="icon-circle">Developers</div>
+            <button class="icon-circle" onclick="window.location.href='homenew.html'">Virtual Clinic</button>
+            <button class="icon-circle" onclick="window.location.href='sos.html'">SOS Video Consultation</button>
+            <button class="icon-circle">Order Medication</button>
+            <button class="icon-circle">Hospital Discount</button>
+            <button class="icon-circle">Ambulance Booking</button>
+            <button class="icon-circle">About</button>
+            <button class="icon-circle">Developers</button>
         </nav>
         <div class="menu" onclick="toggleDropdown()">
             <div class="menu-line"></div>
@@ -81,8 +81,8 @@
             <div class="menu-line"></div>
         </div>
         <div class="dropdown-menu" id="dropdown-menu">
-            <a href="#">Virtual Clinic</a>
-            <a href="#">SOS Video Consultation</a>
+            <a href="homenew.html">Virtual Clinic</a>
+            <a href="sos.html">SOS Video Consultation</a>
             <a href="#">Order Medication</a>
             <a href="#">Hospital Discount</a>
             <a href="#">Ambulance Booking</a>
@@ -101,7 +101,7 @@
 
         <div class="doctor-video-container">
             <video id="doctor-video" autoplay loop muted>
-                <source src="Assets/dr.mp4" type="video/webm">
+                <source src="dr.mp4" type="video/webm">
             </video>
             <p class="doctor-name">Dr. Cure</p>
         </div>
