@@ -1,14 +1,10 @@
 function toggleDropdown() {
     const dropdownMenu = document.getElementById("dropdown-menu");
-    const isDropdownVisible = dropdownMenu.style.display === "block";
+    dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+}
 
-    // Toggle display of dropdown
-    dropdownMenu.style.display = isDropdownVisible ? "none" : "block";
-
-    // If the dropdown is now visible, add a listener to close it when clicking outside
-    if (!isDropdownVisible) {
-        document.addEventListener("click", closeDropdownOnClickOutside);
-    }
+function redirectToDoctors(specialization) {
+    window.location.href = `doctors_by_specialization.php?specialization=${encodeURIComponent(specialization)}`;
 }
 
 function closeDropdownOnClickOutside(event) {
