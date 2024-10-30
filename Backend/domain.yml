@@ -1,0 +1,158 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - dry_cough_coughing_without_no_fever_30_31_32_33_34_35_36_37_38_39_40
+  - dry_cough_with_fever_30_31_32_33_34_35_36_37_38_39_40
+  - dry_cough_without_no_fever_41_42_43_44_45_46_47_48_49_50_51_52_53_54_55_56_57_58_59_60_61_62_63_64_65_66_67_68_69_70 
+  - dry_cough_with_fever_41_42_43_44_45_46_47_48_49_50_51_52_53_54_55_56_57_58_59_60_61_62_63_64_65_66_67_68_69_70
+  - runny_nose_sneezing_watery_eyes
+  - wet_cough_witout_fever_no
+  - wet_cough_with_fever
+  - stomach_pain_Abdominal_pain_painful_urination_frequent_urination_Cough_sore_throat_diarrhea
+  - periods_mentsuration_mentsural_cramps_mood_swings_mensural
+  - needing_to_pee_often_female_strong_smelling_male
+  - vaginal_discharge_white
+  - itching_burning_vulva_swelling_redness
+  - pimples_bumps_acne
+  - itchy_rash_bumps_blisters_burning_allergic_reaction
+  - fever_body_pain_fatigue
+  - burning_ache_vomiting_gas_burping
+  - loose_motion_stools_watery_poop_diarrhea
+  - loose_stools_severe_abdomen_pain_sharp_diarrhea
+  - only_vomitting_throwing_up
+  - headache_nausea
+  - general_body_pain_ache_aches_discomfort_muscle
+  - bleeding_heavy_flow_heavy_menstrual
+  - cut_dizziness_tired_weakness_Shortness_of_breath_Pale_worn_out_tire
+  - tooth_pain_sleeplessnes_headache
+  - constipation_tight_stools_painful_stools
+  - child_kid_development_birth_new_born_baby_phase_nutrition
+  - want_craving_for_to_have_eat_fond_spicy_food_spice
+  - want_craving_for_to_have_eat_fond_sweet_sweets_chocolate_chocolates
+  - want_craving_for_to_have_eat_fond_salty_salt
+  - want_craving_for_to_have_eat_fond_sour_soury
+  - signs_child_development_healthy_baby_how_to_know
+
+responses:
+  utter_greet:
+  - text: "Hi there! 👋 Welcome to V-Cure Virtual Clinic! Just tell me your symptoms (e.g., 'i have dry cough with fever'), and I’ll help from there. How can I assist you today?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_dry_cough_coughing_without_no_fever_30_31_32_33_34_35_36_37_38_39_40:
+  - text: "Condition: Common Cold (Early Stages) \nFood Recommendations: Warm Broths and Soups, Warm Water, Honey, Ginger Tea\nMedical Suggestion: clarinova 250 mg (1-0-1), syrup Astakind ls 5ml \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_dry_cough_with_fever_30_31_32_33_34_35_36_37_38_39_40:
+  - text: "Condition: Common Cold (Early Stages) \nFood Recommendations: Warm Broths and Soups, Warm Water, Honey, Ginger Tea\nMedical Suggestion: clarinova 250 mg (1-0-1), paracetamol 625 mg, syrup Astakind ls 5ml \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_dry_cough_without_no_fever_41_42_43_44_45_46_47_48_49_50_51_52_53_54_55_56_57_58_59_60_61_62_63_64_65_66_67_68_69_70:
+  - text: "Condition: Common Cold (Early Stages) \nFood Recommendations: Warm Broths and Soups, Warm Water, Honey, Ginger Tea\nMedical Suggestion: clarinova 300 mg (1-0-1), syrup Astakind ls 5ml \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_dry_cough_with_fever_41_42_43_44_45_46_47_48_49_50_51_52_53_54_55_56_57_58_59_60_61_62_63_64_65_66_67_68_69_70:
+  - text: "Condition: Common Cold (Early Stages) \nFood Recommendations: Warm Broths and Soups, Warm Water, Honey, Ginger Tea\nMedical Suggestion: clarinova 300 mg (1-0-1), paracetamol 625 mg, syrup Astakind ls 5ml \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_runny_nose_sneezing_watery_eyes:
+  - text: "condition: Cold \nFood Recommendations: Warm Broths and Soups, Warm Water, Honey, Ginger Tea, avoid cold Beverages \nMedical suggestion: cetrizen (0-0-1) \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_wet_cough_witout_fever_no:
+  - text: "condition: Cold \nFood Recommendations: Warm Broths and Soups, Warm Water, Honey, Ginger Tea, avoid cold Beverages \nMedical suggestion: bactoclave 375 mg (1-0-1), cough syrup plain astakind ls \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_wet_cough_with_fever:
+  - text: "condition: Cold \nFood Recommendations: Warm Broths and Soups, Warm Water, Honey, Ginger Tea, avoid cold Beverages \nMedical suggestion: bactoclave 375 mg (1-0-1),paracetamol 650 mg (1-0-1), cough syrup plain astakind ls \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_stomach_pain_Abdominal_pain_painful_urination_frequent_urination_Cough_sore_throat_diarrhea:
+  - text: "condition: Food poisoning \nFood Recommendations: Bananas, rice, plenty of Water, Honey, Ginger Tea, avoid dairy products and fried foods \nMedical suggestion: cycloplam (1-0-1), eflox 200 mg (1-0-1) \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_periods_mentsuration_mentsural_cramps_mood_swings_mensural:
+  - text: "condition: dysmenorrhea(mensural cramps) \nFood Recommendations: Bananas, Dark chocolate, plenty of Water, Honey, Ginger, avoid sugary products and salty foods \nMedical suggestion: naprosen 250 mg (1-0-1) \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_needing_to_pee_often_female_strong_smelling_male:
+  - text: "condition: urinary tract infection \nFood Recommendations: Vitamin C-Rich Foods, Garlic, plenty of Water, Leafy Greens, avoid Spicy Foods and Alcohol \nMedical suggestion: cyclopam (1-0-1), niftas 100 mg (1-0-1), syrup citralka 10ml (1-0-1) \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_vaginal_discharge_white:
+  - text: "condition: Leukorrhea(white discharge) \nFood Recommendations: Yogurt, Garlic, plenty of Water, Leafy Greens, avoid Spicy Foods and Alcohol \nMedical suggestion: clingen forte(0-0-1) \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_itching_burning_vulva_swelling_redness:
+  - text: "condition: pruritus vulvae(Itchy Vulva) \nFood Recommendations: Yogurt, Garlic, plenty of Water, Leafy Greens, avoid Spicy Foods and Alcohol \nMedical suggestion: allegra 120 mg(0-0-1), surfaz ointement one can (0-1-0) \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_pimples_bumps_acne:
+  - text: "condition: Acne \nFood Recommendations: High-Fiber Foods, Zinc-Rich Foods, Probiotic Foods, Leafy Greens, avoid Dairy Products , Sugary Foods and Drinks \nMedical suggestion: clindamycin ointement, doxy-1 (1-0-1) \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_itchy_rash_bumps_blisters_burning_allergic_reaction:
+  - text: "condition: contact dermatitis \nprevention: Avoid irritants, allergens, Wash your skin, Wear protective clothing or gloves, Use moisturizer, Take care around pets \nMedical suggestion: citrizen (0-0-1), calamine lotion \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_fever_body_pain_fatigue:
+  - text: "condition: body pain, fatigue \nprevention: avoid Sugary Foods, avoid Dairy Products, avoid Excessive Caffeine \nMedical suggestion: Paracetamol 650 mg (1-0-1), Cefixime 200 mg (1-0-1) \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_burning_ache_vomiting_gas_burping:
+  - text: "condition: gastritis \nprevention: avoid Spicy Foods, avoid Acidic Foods, avoid Carbonated Drinks, Fried and Fatty Foods  \nMedical suggestion: syrup gastoacid gel 30ml(1-0-1), rantac 150 mg (1-0-0) \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_loose_motion_stools_watery_poop_diarrhea:
+  - text: "condition: Irritable bowel syndrome \nfood recommendation: Fruits, Vegetables, Protein, avoid Fried,Fatty Foods, Coffee, tea, soda, energy drinks  \nMedical suggestion: oflox 200 mg (1-0-1), redotil (1-0-1), sporolac 2 sachets and drink plenty of water \nThis information has been verified and approved by Dr. Asra. If you experience loose stools with blood, please consult a doctor, especially if the symptoms persist for more than three days."
+
+  utter_loose_stools_severe_abdomen_pain_sharp_diarrhea:
+  - text: "condition: stomach flu \nfood recommendation: Fruits, Vegetables, Protein, avoid Fried,Fatty Foods, Coffee, tea, soda, energy drinks \nMedical suggestion: oflox 200 mg (1-0-1), redotil (1-0-1), cyclopam (1-0-1), sporolac 2 sachets and drink plenty of water \nThis information has been verified and approved by Dr. Asra. If you experience loose stools with blood, please consult a doctor, especially if the symptoms persist for more than three days."
+
+  utter_only_vomitting_throwing_up:
+  - text: "condition: vomit \nfood recommendation: Fruits, Vegetables, Protein, avoid Fried,Fatty Foods, Coffee, tea, soda, energy drinks  \nMedical suggestion: vomikind 4 mg (1-0-1) \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_headache_nausea:
+  - text: "condition: Nausea with Headache \nfood recommendation: Fruits, Vegetables, Protein, avoid Fried,Fatty Foods, Coffee, tea, soda, energy drinks  \nMedical suggestion: grenil (1-0-1) \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_general_body_pain_ache_aches_discomfort_muscle:
+  - text: "condition: body pain \nfood recommendation: Fruits, Vegetables, Protein \nMedical suggestion: zerodol-p (1-0-1) \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_bleeding_heavy_flow_heavy_menstrual:
+  - text: "condition: Menorrhagia(heavy menstural bleed) \nfood recommendation: Fruits, Vegetables, Protein, avoid Fried,Fatty Foods, Coffee, tea, soda, energy drinks \nMedical suggestion: etosys MF (1-0-1) \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_cut_dizziness_tired_weakness_Shortness_of_breath_Pale_worn_out_tire:
+  - text: "condition: Anemia \nfood recommendation: Fruits, Vegetables, Protein.\nMedical suggestion: femiup (0-1-0), syrup heamocal 5ml (1-0-1) \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_tooth_pain_sleeplessnes_headache:
+  - text: "condition: Toothpain \nAvoid: Sugary Foods, Acidic Foods, Drinks, Hard and Crunchy Foods.\nMedical suggestion: pan-D (1-0-0), paracetamol (1-0-1) \nThis information has been verified and approved by Dr. Asra. If symptoms persist for more than 3 days, please consult a doctor."
+
+  utter_constipation_tight_stools_painful_stools:
+  - text: "condition: Constipation \nAvoid: Sugary Foods, Acidic Foods, Drinks, Hard and Crunchy Foods.\nMedical suggestion: Dulcoflex (0-0-1) \nThis information has been verified and approved by Dr. Asra. If you experience loose stools with blood, please consult a doctor, especially if the symptoms persist for more than three days."
+
+  utter_child_kid_development_birth_new_born_baby_phase_nutrition:
+  - text: "condition: child development phases\n Birth to 4 months:\n Breast milk or formula only\nBirth to 4-6 months:\nBreast milk or formula, plus,Pureed vegetables (peas, squash), Pureed fruit (apples, bananas, peaches), Pureed meat (chicken, pork, beef), how much per day: Breastfeeding or formula 4 to 6 feedings (breastfeeding, or 4- to 6-ounce bottles), When starting solids, begin with a very small amount of a single-ingredient pureed food (about 1 to 2 teaspoons), Gradually increase to 1 to 2 tablespoons. If you're giving cereal, mix it with breast milk or formula so the consistency isn't too thick, Birth to 6 to 8 months= Same as 4 to 6 months( gradually increase the quantity 2 -3 tablespoons to 4 to 8 tablespoons)\nBirth to Age 8-12 months:\nSame as 6 to 8 months, plus Picks up objects with thumb and forefinger, Can transfer items from one hand to the other, Tries to use a spoon\nThis information has been verified and approved by Dr. Asra."
+
+  utter_want_craving_for_to_have_eat_fond_spicy_food_spice:
+  - text: "Your body needs: A burst of flavor and possibly some endorphin release, often triggered by spicy foods!\n Healthy alternatives: Spiced Roasted Chickpeas, Spicy Avocado Spread on Whole Grain Toast, Spicy Hummus."
+
+  utter_want_craving_for_to_have_eat_fond_sweet_sweets_chocolate_chocolates:
+  - text: "Your body needs: Sweetness, energy, and a boost of happiness!\n Healthy alternatives: Dark chocolate, Fresh fruits like bananas, berries, or apples , Greek yogurt with honey."
+
+  utter_want_craving_for_to_have_eat_fond_salty_salt:
+  - text: "Your body needs: Salty snacks, which often include items like chips, pretzels, or salted nuts!\n Healthy alternatives: Try air-popped popcorn with a sprinkle of sea salt, roasted chickpeas seasoned with herbs, or sliced cucumbers with a light dip of hummus. You can also enjoy edamame sprinkled with a bit of salt or whole grain crackers with avocado."
+
+  utter_want_craving_for_to_have_eat_fond_sour_soury:
+  - text: "Your body needs: Salty snacks, which often include items like chips, pretzels, or salted nuts!\n Healthy alternatives: Try air-popped popcorn with a sprinkle of sea salt, roasted chickpeas seasoned with herbs, or sliced cucumbers with a light dip of hummus. You can also enjoy edamame sprinkled with a bit of salt or whole grain crackers with avocado."
+
+  utter_signs_child_development_healthy_baby_how_to_know:
+  - text: "Healthy baby checklist\n2-Month Checklist:\nTurns head towards sounds,Pays attention to faces,Begins to act bored (cries, fussy) if activity doesn’t change,Can hold head up\n4-Month Checklist: \nBegins to babble,Reaches for toy with one hand,Holds head steady, unsupported,May be able to roll over from tummy to back \n6-Month Checklist: \nResponds to sounds by making sounds,Begins to sit without support,Looks around at things nearby\n9-Month Checklist:\nUnderstands no, Plays peek-a-boo,Uses fingers to point at things,Crawls\n12-Month Checklist: \nSays words like mama, dada and uh-oh, Starts to use things correctly, Pulls up to stand,Follows simple directions."
+  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
